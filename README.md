@@ -6,8 +6,8 @@
 # Features
 
 - Login/Sign Up
-  -signIn / signUp form
-  -redirects to Browse page
+  - signIn / signUp form
+  - redirects to Browse page
 
 - Browse Page (after Authentication)
   - Header

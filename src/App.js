@@ -1,11 +1,7 @@
-import "./App.css";
+import Body from "./components/Body";
 
 function App() {
-  return (
-    <div className="p-2 font-bold text-2xl bg-slate-200 flex justify-center">
-      <h1>Hellooooooo</h1>
-    </div>
-  );
+  return <Body />;
 }
 
 export default App;
