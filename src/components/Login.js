@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import Header from "./Header";
 
 const Login = () => {
-    const [isSignInForm, setisSignInForm] = useState(true);
-     
-     const toggleSignInForm = () =>{
-        setisSignInForm(!isSignInForm);
-     }
+  const [isSignInForm, setisSignInForm] = useState(true);
+
+  const toggleSignInForm = () => {
+    setisSignInForm(!isSignInForm);
+  };
   return (
     <div>
       <Header />
@@ -18,29 +18,36 @@ const Login = () => {
         />
       </div>
       <form className="absolute w-96 my-36 mx-auto left-0 right-0 p-12 bg-black text-white rounded-lg bg-opacity-80">
-        <h1 className="text-3xl font-bold my-4">{isSignInForm ? "Sign In" : "Sign Up"}</h1>
-        {!isSignInForm &&         <input
-          className="bg-gray-700 p-4 my-4 w-full  rounded-lg"
-          type="text"
-          placeholder="Full Name "
-        />}
+        <h1 className="text-3xl font-bold my-4">
+          {isSignInForm ? "Sign In" : "Sign Up"}
+        </h1>
+        {!isSignInForm && (
+          <input
+            className="bg-gray-700 p-4 my-4 w-full   bg-opacity-60"
+            type="text"
+            placeholder="Full Name "
+          />
+        )}
         <input
-          className="bg-gray-700 p-4 my-4 w-full  rounded-lg"
+          className="bg-gray-700 p-4 my-4 w-full   bg-opacity-60"
           type="email"
-          placeholder="Email Address "
+          placeholder="Email or Phone Number"
         />
         <input
-          className="bg-gray-700 p-4 my-4 w-full rounded-lg"
+          className="bg-gray-700 p-4 my-4 w-full bg-opacity-60"
           type="password"
           placeholder="Password"
         />
 
         <button className="p-4 my-6 bg-red-700 w-full rounded-lg">
-        {isSignInForm ? "Sign In" : "Sign Up"}
+          {isSignInForm ? "Sign In" : "Sign Up"}
         </button>
 
-<p onClick={() => toggleSignInForm()}>{isSignInForm ? "New to Netflix? Sign Up now" : "Already a User? Sign In now"}</p>
-
+        <p className="cursor-pointer py-4" onClick={toggleSignInForm}>
+          {isSignInForm
+            ? "New to Netflix? Sign Up now"
+            : "Already a User? Sign In now"}
+        </p>
       </form>
     </div>
   );
