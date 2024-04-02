@@ -8,6 +8,10 @@
 - sign Up form
 - Form Validation
 - useRef Hook
+- Firebase Setup
+- Deploying our app to production
+- Create SignUp User Account
+
 # Features
 
 - Login/Sign Up
@@ -18,8 +22,11 @@
 - Browse Page (after Authentication)
 
   - Header
-  - Main Movie - Trailor in Background - Title, Description, Play Button - Movie Suggestions
-    -MovieList \* N
+  - Main Movie
+    - Trailor in Background
+    - Title, Description, Play Button
+    - Movie Suggestions
+    - MovieList \* N
 
 - Netflix GPT
   - search Bar
