@@ -1,7 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import useMovieTrailer from "../hooks/useMovieTrailer";
-import { screen } from "@testing-library/react";
 
 const VideoBackground = ({ movieId }) => {
   //const [trailerId, setTrailerId] = useState(null);
